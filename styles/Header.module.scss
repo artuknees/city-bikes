@@ -1,0 +1,83 @@
+.Nav {
+    width: 100%;
+    height: 84px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px gray;
+    
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.itemsLeft {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 48px;
+    height: 100%;
+    align-items: center;
+    padding: 0;
+
+}
+.itemsRight {
+    display: flex;
+    flex-direction: row;
+    margin: 0 48px 0 0;
+    height: 100%;
+    align-items: center;
+    padding: 0;
+}
+.logoFigure {
+    margin: 0;
+}
+.logoFigure:hover {
+    cursor: pointer;
+}
+.itemsLeft span {
+    margin: 18px 18px 18px 18px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.ImageDetail {
+    margin: 18px 18px 18px 0;
+    width: 90px;
+}
+
+.itemsRight span {
+    margin: 18px 18px 18px 18px;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.logIn {
+    background: #ed2e14;
+    color: white;
+    height: 50px;
+    width: 100px;
+    margin: 18px 18px 18px 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 28px;
+    transition: all 0.4s;
+
+}
+.itemsLeft span:hover{
+    text-decoration: underline;
+
+}
+.itemsRight span:hover{
+    text-decoration: underline;
+
+}
+.logIn:hover {
+    color:lightslategrey;
+    transition: all 0.4s;
+}

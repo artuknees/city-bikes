@@ -1,0 +1,20 @@
+.generalContainer{
+    height: inherit;
+    padding: 128px 0 0 48px;
+    background-image: url('../public/homeImage.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.parragraph {
+    width: 500px;
+    height: 250px;
+    margin-left: 48px;
+    border: solid 4px #ed2e14;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+}

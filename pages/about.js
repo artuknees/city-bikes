@@ -1,14 +1,14 @@
 import Head from 'next/head';
-import HomePage from '../src/components/HomePage';
+import About from '../src/components/About';
 
-export default function Home() {
+export default function about() {
 
   return (
     <>
       <Head>
         <title>City Bikes</title>
       </Head>
-      <HomePage/>
+      <About/>
     </>
   )
 }

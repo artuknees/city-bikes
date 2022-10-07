@@ -1,14 +1,14 @@
 import Head from 'next/head';
-import HomePage from '../src/components/HomePage';
+import Basic from '../src/components/Basic';
 
-export default function Home() {
+export default function StationsFinder() {
 
   return (
     <>
       <Head>
         <title>City Bikes</title>
       </Head>
-      <HomePage/>
+      <Basic/>
     </>
   )
 }
