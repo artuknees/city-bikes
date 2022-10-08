@@ -1,3 +1,5 @@
+@import 'vars';
+
 .generalContainer{
     height: inherit;
     padding: 128px 0 0 48px;
@@ -11,10 +13,16 @@
 
 .parragraph {
     width: 500px;
-    height: 250px;
+    height: auto;
+    text-align: justify;
     margin-left: 48px;
-    border: solid 4px #ed2e14;
+    border: solid 4px $--base-orange;
     border-radius: 12px;
-    color: white;
+    color: $--base-blue;
     font-weight: 600;
+    padding: 12px;
+    background-color: $--base-white;
+}
+.parragraph h1 {
+    margin-top: 8px;
 }

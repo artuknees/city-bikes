@@ -20,22 +20,22 @@ const Header = () => {
 								</div>
 							</Link>
 						</figure>
-						<span>
+						<li>
 							<Link href="/about">About</Link>
-						</span>
-						<span>
+						</li>
+						<li>
 							<Link href="/stationsFinder">Stations</Link>
-						</span>
-						<span>
+						</li>
+						<li>
 							<Link href="/">Donate</Link>
-						</span>
+						</li>
 					</ul>
 				</div>
 				<div className={styles.navbarRigth}>
 					<ul className={styles.itemsRight}>
-						<span>
+						<li>
 							<Link href="/"> Log In</Link>
-						</span>
+						</li>
 						<div className={styles.logIn}>
 							<Link href="/"> Join In</Link>
 						</div>

@@ -1,9 +1,20 @@
 @import './vars'; 
 
 .basicContainer {
-    padding: 128px 0 0 48px;
-
+    display: flex;
+    flex-direction: column;
+    color: $--base-blue;
+    background-color: white;
 }
+.dataContainer{
+    margin: 80px 24px 0 24px;
+}
+
 .container {
-    height: 36px;
+    height: auto;
+    margin: 12px 0 12px 0;
+}
+
+.results {
+    height: auto;
 }
