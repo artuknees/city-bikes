@@ -41,7 +41,6 @@
     transform: scaleX(0);
     transition: transform 300ms ease-in-out;
 }
-
 .itemsLeft li:hover::after {
     transform: scaleX(1);
 }
@@ -68,7 +67,6 @@
     transform: scaleX(0);
     transition: transform 300ms ease-in-out;
 }
-
 .itemsRight li:hover::after {
     transform: scaleX(1);
 }
