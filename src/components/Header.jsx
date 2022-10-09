@@ -34,7 +34,7 @@ const Header = () => {
 				<div className={styles.navbarRigth}>
 					<ul className={styles.itemsRight}>
 						<li>
-							<Link href="/"> Log In</Link>
+							<Link href="/logIn"> Log In</Link>
 						</li>
 						<div className={styles.logIn}>
 							<Link href="/"> Join In</Link>

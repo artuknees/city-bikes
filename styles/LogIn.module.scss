@@ -1,0 +1,150 @@
+@import './vars'; 
+
+.generalContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.opacityContainer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    height: fit-content;
+}
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+.titleContainer::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('../public/homeImage.webp');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.4;
+    z-index: 0;
+}
+.lastContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    flex: 0 1 25%;
+    height: 100%;
+}
+.sourceFooter{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    margin: 24px 24px 0 0;
+}
+.sourceFooter p {
+    margin: 4px;
+    font-size: 12px;
+    color: $--base-blue;
+}
+.footerContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: $--base-blue;
+}
+.footerContainer p {
+    margin: 0 0 4px 0;
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    margin: 100px 20% 0 20%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.formSpace{
+    display: flex;
+    flex-direction: column;
+    background-color: $--base-white;
+    border: solid 2px $--base-blue;
+    height: 80%;
+    width: 45%;
+    border-radius: 16px;
+    padding: 4%;
+}
+.formSpace form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.formSpace > span {
+    font-size: 1.75vw;
+    color: $--base-blue;
+    margin-bottom: 3.5vh;
+}
+.labelInput {
+    display: flex;
+    flex-direction: column;
+}
+.labelInput label{
+    margin-bottom: 4px;
+    color: $--base-blue;
+}
+.labelInput input{
+    background-color: $--base-white;
+    border: solid 1.5px $--base-orange;
+    height: 4vh;
+    border-radius: 2vh;
+    padding: 0 1vw 0 1vw;
+    color: $--base-blue;
+    text-align: center;
+    font-size: 2vh;
+}
+.buttonContainer {
+    margin-top: 2.5vh;
+}
+.buttonContainer button {
+    height: 4vh;
+    width: 100%;
+    border-radius: 2vh;
+    background-color: $--base-orange;
+    border: solid 1px $--base-orange;
+    font-size: 2vh;
+    font-weight: 600;
+    color: $--base-white;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.buttonContainer button:hover {
+    color: $--base-blue;
+    border: solid 1.5px $--base-yellow;
+    transition: all 0.4s;
+}
+
+.formSpan {
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    color: $--base-blue;
+    transition: all 0.4s;
+    width: fit-content;
+    align-self: center;
+}
+.formSpan::after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px $--base-blue;
+    padding-bottom: 0;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+.formSpan:hover::after {
+    transform: scaleX(1);
+}

@@ -30,6 +30,10 @@ const HomePage = () => {
                 </div>
             </div>
             <div className={styles.lastContainer}>
+                <div className={styles.sourceFooter}>
+                    <p>Powered by CityBikes API</p>
+                    <p>http://api.citybik.es/v2/</p>
+                </div>
                 <div className={styles.footerContainer}>
                     <p>Made with <b>♡</b> at Villa Urquiza</p>
                 </div>

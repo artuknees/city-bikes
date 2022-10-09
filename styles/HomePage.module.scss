@@ -29,16 +29,15 @@
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: 0.35;
+    opacity: 0.4;
     z-index: 0;
 }
 .lastContainer{
     display: flex;
     flex-direction: column;
     background-color: white;
-    flex: 0 1 auto;
+    flex: 0 1 25%;
     height: 100%;
-    align-items: center;
 }
 .titleSpace{
     display: flex;
@@ -66,6 +65,12 @@
     background-color: $--base-orange;
     cursor: pointer;
     margin-bottom: 36px;
+    transition: all 0.4s;
+
+}
+.searchButton:hover {
+    color: $--base-blue;
+    transition: all 0.4s;
 }
 .spanContainer {
     width: fit-content;
@@ -88,10 +93,24 @@
 .titleSpace span:hover::after {
     transform: scaleX(1);
 }
+.sourceFooter{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    margin: 24px 24px 0 0;
+}
+.sourceFooter p {
+    margin: 4px;
+    font-size: 12px;
+    color: $--base-blue;
+}
 .footerContainer {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     color: $--base-blue;
 }
-
+.footerContainer p {
+    margin: 0 0 4px 0;
+}
