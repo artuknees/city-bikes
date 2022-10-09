@@ -14,7 +14,7 @@ const Header = () => {
 						<figure className={styles.logoFigure}>
 							<Link href="/">
 								<div className={styles.ImageDetail}>
-									<Image src={logo} 
+									<Image src={logo} alt='logo'
 									objectFit={'contain'} 
 									></Image>
 								</div>
