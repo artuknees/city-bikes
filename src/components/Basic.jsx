@@ -1,66 +1,19 @@
 import React , {useState , useEffect} from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import Loading from './Loading';
 import useGetStations from '../hooks/useGetStations';
 import styles from '../../styles/basic.module.scss';
 
 const Basic = () => {
 
-    // const [stations, setStations] = useState([]);
-    // const [basicData,setBasicData] = useState('');
     const [selectedIndex,setSelectedIndex] = useState('');
     const API = 'http://api.citybik.es/v2/networks/ecobici-buenos-aires';
     const {stations , basicData} = useGetStations(API);
-
-    // useEffect (() => {
-    //     const fetchData = async () => {
-    //         const {data , status} = await axios('http://api.citybik.es/v2/networks/ecobici-buenos-aires');
-    //         if (status === 200) {
-    //             setBasicData(data.network.company[0]);
-    //             setStations(data.network.stations.map((item,index) => ({
-    //                 name: item.name,
-    //                 id: item.id,
-    //                 free_bikes: item.free_bikes,
-    //                 empty_slots: item.empty_slots,
-    //                 address: item.extra.address,
-    //                 last_updated: item.extra.last_updated,
-    //                 latitude: item.latitude,
-    //                 longitude: item.longitude,
-    //                 timestamp: item.timestamp,
-    //                 index: index,
-    //             })));
-    //         };
-            
-    //     };
-    //     fetchData();
-
-    // },[]);
-
-    // const fetchData = async () => {
-    //     const {data , status} = await axios('http://api.citybik.es/v2/networks/ecobici-buenos-aires');
-    //     if (status === 200) {
-    //         setBasicData(data.network.company[0]);
-    //         setStations(data.network.stations.map((item,index) => ({
-    //             name: item.name,
-    //             id: item.id,
-    //             free_bikes: item.free_bikes,
-    //             empty_slots: item.empty_slots,
-    //             address: item.extra.address,
-    //             last_updated: item.extra.last_updated,
-    //             latitude: item.latitude,
-    //             longitude: item.longitude,
-    //             timestamp: item.timestamp,
-    //             index: index,
-    //         })));
-    //     };  
-    // };
-
 
     const selectStation = (value) => {
         const selection = document.getElementById('selectName');
         const result = selection.options[selection.selectedIndex].value;
         setSelectedIndex(result);
-
         return result
     };
 
@@ -71,14 +24,11 @@ const Basic = () => {
                 
                 {basicData ? <h3>{basicData}</h3> : <h3>Loading data...</h3>}
 
-                {/* <h5>{basicData ? basicData : 'Loading data...'}</h5> */}
-
                 {basicData ? <p> Stations = { stations ? stations.length : '' } </p>  : <Loading/> }
                 
                 { selectedIndex ? 
 
                     <div className={styles.container}>
-                        {/* <button className={styles.button} onClick={() => fetchData()}> */}
                         <button className={styles.button}>
 
                             <span className={styles.span}>Refresh</span>

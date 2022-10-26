@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 import styles from '../../styles/LogIn.module.scss';
 
@@ -12,7 +12,7 @@ const LogIn = () => {
                     <section className={styles.formContainer}>
                         <div className={styles.formSpace}>
                             <span>Happy to have you back!</span>
-                            <form action="">
+                            <form>
                                 <div className={styles.labelInput}>
                                     <label htmlFor="">Username</label>
                                     <input type="text" />
