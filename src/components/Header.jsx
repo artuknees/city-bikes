@@ -10,6 +10,17 @@ const Header = () => {
 		<>
 			<nav className={styles.Nav}>
 				<div className={styles.navbarLeft}>
+					<section className={styles.mobileIcon}>
+						<figure className={styles.logoFigure}>
+							<Link href="/">
+								<div className={styles.ImageDetail}>
+									<Image src={logo} alt='logo'
+									objectFit={'contain'} 
+									></Image>
+								</div>
+							</Link>
+						</figure>
+					</section>
 					<ul className={styles.itemsLeft}>
 						<figure className={styles.logoFigure}>
 							<Link href="/">

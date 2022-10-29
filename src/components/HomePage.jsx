@@ -1,9 +1,17 @@
-import React , {useState} from 'react';
-import Link from 'next/link';
-
+import React from 'react';
+// import Link from 'next/link';
+import { useRouter } from 'next/router';
 import styles from '../../styles/HomePage.module.scss';
 
+
 const HomePage = () => {
+
+    const router = useRouter();
+
+    const handleClick = () => {
+        router.push('/stationsFinder')
+    };
+
 
 	return (
         <div className={styles.generalContainer}>
@@ -15,9 +23,9 @@ const HomePage = () => {
                         <p>Become a member, breeze through the boroughs, and explore the city you love</p>
                         
                         <div>
-                            <Link href="/stationsFinder">
-                                <button className={styles.searchButton}>Search your bike!</button>                        
-                            </Link>
+                            {/* <Link href="/stationsFinder"> */}
+                                <button className={styles.searchButton} onClick={()=>handleClick()}>Search your bike!</button>                        
+                            {/* </Link> */}
                         </div>
 
                         <div className={styles.spanContainer}>

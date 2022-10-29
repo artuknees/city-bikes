@@ -3,9 +3,9 @@ import styles from '../../styles/About.module.scss';
 
 const About = () => {
 
-    const [stations, setStations] = useState([]);
-    const [basicData,setBasicData] = useState('');
-    const [selectedIndex,setSelectedIndex] = useState('');
+    // const [stations, setStations] = useState([]);
+    // const [basicData,setBasicData] = useState('');
+    // const [selectedIndex,setSelectedIndex] = useState('');
 
 
 	return (
