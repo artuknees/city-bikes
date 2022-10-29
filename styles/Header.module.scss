@@ -13,7 +13,7 @@
     background-color: white;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 3;
     color: $--base-blue;
 }
 
@@ -101,4 +101,21 @@
 .logIn:hover {
     color: $--base-blue;
     transition: all 0.4s;
+}
+.mobileIcon {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .itemsLeft {
+        display: none;
+    }
+    .itemsRight{
+        display: none;
+    }
+    .mobileIcon {
+        display: flex;
+        margin-left: 12px;
+        scale: 0.85;
+    }
 }

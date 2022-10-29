@@ -19,7 +19,7 @@ const HomePage = () => {
                 <div className={styles.titleContainer}>
                     <section className={styles.titleSpace}>
                         
-                        <h1 className={styles.title}>Ride your bike through Buenos Aires City</h1>
+                        <h1 className={styles.title}>Ride your bike through <br/>Buenos Aires City</h1>
                         <p>Become a member, breeze through the boroughs, and explore the city you love</p>
                         
                         <div>

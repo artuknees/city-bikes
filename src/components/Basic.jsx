@@ -22,29 +22,33 @@ const Basic = () => {
             <div className={styles.dataContainer}>
                 <h1>Find your bike or your empty slot</h1>
                 
-                {basicData ? <h3>{basicData}</h3> : <h3>Loading data...</h3>}
+                {basicData ? null : 
+                    <div className={styles.loaderContainer}>
+                        <h3 className={styles.LoadingTitle}>Loading data...</h3>
+                        <Loading/>
+                    </div>
+                }
 
-                {basicData ? <p> Stations = { stations ? stations.length : '' } </p>  : <Loading/> }
+                {basicData ? <p> Stations found: { stations ? stations.length : '' } </p>  : null }
                 
                 { selectedIndex ? 
 
                     <div className={styles.container}>
-                        <button className={styles.button}>
-
-                            <span className={styles.span}>Refresh</span>
+                        <button className={styles.button}>Refresh
+                            {/* <span className={styles.span}>Refresh</span> */}
                         </button>
                     </div>
                 : null }
 
 
                 {basicData ? 
-                    <>
-                    <span>Select a station: </span>
-                    <select defaultValue={'Seleccionar'} name="" id="selectName" onChange={(e) => selectStation(e.target.value)}>
-                    <option value='Seleccionar' disabled>Seleccionar</option>
-                    { [...stations].sort((a,b) => a.name.localeCompare(b.name)).map(item => <option value={item.index} key={item.index}>{item.name}</option>)  } 
-                    </select> 
-                    </>
+                    <div className={styles.selectContainer}>
+                        <span className={styles.span}>Select a station: </span>
+                        <select defaultValue={'Seleccionar'} name="" id="selectName" onChange={(e) => selectStation(e.target.value)}>
+                        <option value='Seleccionar' disabled>Seleccionar</option>
+                        { [...stations].sort((a,b) => a.name.localeCompare(b.name)).map(item => <option value={item.index} key={item.index}>{item.name}</option>)  } 
+                        </select> 
+                    </div>
                     : null}
 
                 

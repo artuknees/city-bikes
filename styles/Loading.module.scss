@@ -7,16 +7,16 @@
     background-color: grey;
     box-shadow: 0px 0px 15px $--base-orange;
     display: flex;
-    height: 12px;
-    border-radius: 12px;
+    height: 24px;
+    border-radius: 24px;
 }
 
 .progress {
     width: 0%;
     background-color:white;
     animation: progress 1s infinite;
-    height: 8px;
-    border-radius: 8px;
+    height: 20px;
+    border-radius: 20px;
 }
 
 @keyframes progress {
