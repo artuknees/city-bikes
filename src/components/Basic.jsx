@@ -20,6 +20,7 @@ const Basic = () => {
 	return (
         <div className={styles.basicContainer}>
             <div className={styles.dataContainer}>
+
                 <h1>Find your bike or your empty slot</h1>
                 
                 {basicData ? null : 
@@ -61,7 +62,6 @@ const Basic = () => {
                         <p><b>Última actualización:</b> { new Intl.DateTimeFormat('es-ES', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' }).format((stations[selectedIndex].last_updated)*1000) }</p>
                     </div>    
                 }
-
             </div>
         </div>
 	);
